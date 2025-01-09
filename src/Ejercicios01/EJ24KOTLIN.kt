@@ -1,7 +1,7 @@
 package com.dam1.ejerciciosbasicos.Ejercicios01
 
 fun main() {
-    print("Escriba un precio de un producto en euros: ")
+    println("Escriba un precio de un producto en euros: ")
     val precio = readLine() ?: ""
 
     try {

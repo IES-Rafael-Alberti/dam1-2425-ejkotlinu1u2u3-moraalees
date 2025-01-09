@@ -1,7 +1,7 @@
 package com.dam1.ejerciciosbasicos.Ejercicios01
 
 fun main() {
-    print("Introduzca su compra nombrando artículos separados por comas: ")
+    println("Introduzca su compra nombrando artículos separados por comas: ")
     val compra = readLine() ?: ""
     val lista = compra.split(",")
     
