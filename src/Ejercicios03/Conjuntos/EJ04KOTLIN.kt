@@ -1,5 +1,19 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Conjuntos
 
+fun ej4conj(){
+    limpiarTerminal3()
+
+    val frutas1 = listOf("manzana", "pera", "naranja", "plátano", "uva")
+    val frutas2 = listOf("manzana", "pera", "durazno", "sandía", "uva")
+
+    val setFrutas1 = frutas1.toSet()
+    val setFrutas2 = frutas2.toSet()
+
+    frutasComunes(setFrutas1, setFrutas2)
+    frutasEn1(setFrutas1, setFrutas2)
+    frutasEn2(setFrutas1, setFrutas2)
+}
+
 fun limpiarTerminal3() {
     repeat(10) { println() }
 }
@@ -27,15 +41,5 @@ fun frutasEn2(frutas1: Set<String>, frutas2: Set<String>) {
 }
 
 fun main() {
-    limpiarTerminal3()
-
-    val frutas1 = listOf("manzana", "pera", "naranja", "plátano", "uva")
-    val frutas2 = listOf("manzana", "pera", "durazno", "sandía", "uva")
-
-    val setFrutas1 = frutas1.toSet()
-    val setFrutas2 = frutas2.toSet()
-
-    frutasComunes(setFrutas1, setFrutas2)
-    frutasEn1(setFrutas1, setFrutas2)
-    frutasEn2(setFrutas1, setFrutas2)
+    ej4conj()
 }

@@ -1,38 +1,6 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Condicionales
 
-fun comprobarPizza(pizza: String): Boolean {
-    return pizza == "vegetariana" || pizza == "no"
-}
-
-fun pizzaVegetariana(pizza: String) {
-    if (pizza == "vegetariana") {
-        println("Perfecto. Sus ingredientes para añadir a la pizza son Pimiento o Tofu, sólo uno. El tomate y queso ya están incluidos.")
-    }
-}
-
-fun ingredienteVegetariana(ingredientes: String): Boolean {
-    return ingredientes == "pimiento" || ingredientes == "tofu"
-}
-
-fun finalVegetariana(pizza: String, ingredientes: String) {
-    println("Perfecto, entonces su pizza es $pizza y el ingrediente que lleva es $ingredientes, tomate y queso. ¡Gracias!")
-}
-
-fun pizzaNoVegetariana(pizza: String) {
-    if (pizza == "no") {
-        println("Perfecto. Sus ingredientes para añadir a la pizza son Peperoni, Jamón o Salmón, sólo uno. El tomate y queso ya están incluidos.")
-    }
-}
-
-fun ingredientesNoVegetariana(ingredientes: String): Boolean {
-    return ingredientes == "jamón" || ingredientes == "salmón" || ingredientes == "peperoni"
-}
-
-fun finalNoVegetariana(pizza: String, ingredientes: String) {
-    println("Perfecto, entonces su pizza no es vegetariana y el ingrediente que lleva es $ingredientes, tomate y queso. ¡Gracias!")
-}
-
-fun main() {
+fun ej10cond(){
     println("Bienvenido a Bella Napoli. Para empezar me gustaría preguntarle como quiere la pizza. ¿Vegetariana o no?: ")
     var pizza = readLine()?.lowercase()?.trim() ?: ""
 
@@ -66,4 +34,40 @@ fun main() {
 
         finalNoVegetariana(pizza, ingredientes)
     }
+}
+
+fun comprobarPizza(pizza: String): Boolean {
+    return pizza == "vegetariana" || pizza == "no"
+}
+
+fun pizzaVegetariana(pizza: String) {
+    if (pizza == "vegetariana") {
+        println("Perfecto. Sus ingredientes para añadir a la pizza son Pimiento o Tofu, sólo uno. El tomate y queso ya están incluidos.")
+    }
+}
+
+fun ingredienteVegetariana(ingredientes: String): Boolean {
+    return ingredientes == "pimiento" || ingredientes == "tofu"
+}
+
+fun finalVegetariana(pizza: String, ingredientes: String) {
+    println("Perfecto, entonces su pizza es $pizza y el ingrediente que lleva es $ingredientes, tomate y queso. ¡Gracias!")
+}
+
+fun pizzaNoVegetariana(pizza: String) {
+    if (pizza == "no") {
+        println("Perfecto. Sus ingredientes para añadir a la pizza son Peperoni, Jamón o Salmón, sólo uno. El tomate y queso ya están incluidos.")
+    }
+}
+
+fun ingredientesNoVegetariana(ingredientes: String): Boolean {
+    return ingredientes == "jamón" || ingredientes == "salmón" || ingredientes == "peperoni"
+}
+
+fun finalNoVegetariana(pizza: String, ingredientes: String) {
+    println("Perfecto, entonces su pizza no es vegetariana y el ingrediente que lleva es $ingredientes, tomate y queso. ¡Gracias!")
+}
+
+fun main() {
+    ej10cond()
 }

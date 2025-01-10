@@ -3,6 +3,21 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.ListasTuplas
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
+fun ej13litu(){
+    limpiarTerminal5()
+    val numeros = introducirNumeros()
+
+    mostrarLista2(numeros)
+
+    val media = calcularMedia(numeros)
+    mostrarMedia(media)
+
+    val desviacion = calcularDesviacion(numeros, media)
+    mostrarDesviacion(desviacion)
+
+    mostrarResultados(numeros, media, desviacion)
+}
+
 fun limpiarTerminal5() {
     repeat(10) { println() }
 }
@@ -67,16 +82,5 @@ fun mostrarResultados(lista: List<Int>, media: Double, desviacion: Double) {
 }
 
 fun main() {
-    limpiarTerminal5()
-    val numeros = introducirNumeros()
-
-    mostrarLista2(numeros)
-
-    val media = calcularMedia(numeros)
-    mostrarMedia(media)
-
-    val desviacion = calcularDesviacion(numeros, media)
-    mostrarDesviacion(desviacion)
-
-    mostrarResultados(numeros, media, desviacion)
+    ej13litu()
 }

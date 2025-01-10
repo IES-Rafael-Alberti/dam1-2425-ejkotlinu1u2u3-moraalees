@@ -2,6 +2,20 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.Diccionarios
 
 import java.util.*
 
+fun ej8dic(){
+    val traducciones = pedirPalabras()
+
+    val scanner = Scanner(System.`in`)
+    println("Ahora escriba una frase para intentar traducirla a base del diccionario creado: ")
+    val frase = scanner.nextLine().trim().lowercase()
+    val fraseTraducida = traducirFrase(traducciones, frase)
+
+    limpiarTerminal3()
+    println("\nFrase traducida:")
+    pausa3()
+    println(fraseTraducida)
+}
+
 fun limpiarTerminal3() {
     repeat(10) { println() }
 }
@@ -50,15 +64,5 @@ fun traducirFrase(diccionario: MutableMap<String, String>, frase: String): Strin
 }
 
 fun main() {
-    val traducciones = pedirPalabras()
-
-    val scanner = Scanner(System.`in`)
-    println("Ahora escriba una frase para intentar traducirla a base del diccionario creado: ")
-    val frase = scanner.nextLine().trim().lowercase()
-    val fraseTraducida = traducirFrase(traducciones, frase)
-
-    limpiarTerminal3()
-    println("\nFrase traducida:")
-    pausa3()
-    println(fraseTraducida)
+    ej8dic()
 }

@@ -1,5 +1,10 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Iterativas
 
+fun ej13ite(){
+    println("Escriba lo que quiera: ")
+    ecoPalabra()
+}
+
 fun ecoPalabra() {
     var cadena: String
     do {
@@ -11,6 +16,5 @@ fun ecoPalabra() {
 }
 
 fun main() {
-    println("Escriba lo que quiera: ")
-    ecoPalabra()
+    ej13ite()
 }

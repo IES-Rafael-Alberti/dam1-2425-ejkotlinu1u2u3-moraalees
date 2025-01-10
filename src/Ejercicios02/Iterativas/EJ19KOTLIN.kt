@@ -1,5 +1,23 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Iterativas
 
+fun ej19ite(){
+    while (true) {
+        mostrarMenu()
+        print("Seleccione una opción (1, 2 o 3): ")
+        val opcion = readLine()?.toIntOrNull()
+
+        if (opcion != null) {
+            if (opcion == 3) {
+                ejecutarOpcion(opcion)
+                break
+            }
+            ejecutarOpcion(opcion)
+        } else {
+            println("Entrada no válida. Por favor, ingrese un número.")
+        }
+    }
+}
+
 fun mostrarMenu() {
     println("\nMenú del programa:")
     println("1 - Comenzar programa")
@@ -17,19 +35,5 @@ fun ejecutarOpcion(opcion: Int) {
 }
 
 fun main() {
-    while (true) {
-        mostrarMenu()
-        print("Seleccione una opción (1, 2 o 3): ")
-        val opcion = readLine()?.toIntOrNull()
-
-        if (opcion != null) {
-            if (opcion == 3) {
-                ejecutarOpcion(opcion)
-                break
-            }
-            ejecutarOpcion(opcion)
-        } else {
-            println("Entrada no válida. Por favor, ingrese un número.")
-        }
-    }
+    ej19ite()
 }

@@ -1,5 +1,12 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Iterativas
 
+fun ej25ite(){
+    print("Por favor, ingresa una frase: ")
+    val frase = readLine() ?: ""
+
+    contador(frase)
+}
+
 fun contador(frase: String): String {
     val palabras = frase.split(" ")
 
@@ -20,8 +27,5 @@ fun contador(frase: String): String {
 }
 
 fun main() {
-    print("Por favor, ingresa una frase: ")
-    val frase = readLine() ?: ""
-
-    contador(frase)
+    ej25ite()
 }

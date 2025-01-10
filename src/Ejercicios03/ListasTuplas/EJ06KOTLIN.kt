@@ -2,6 +2,23 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.ListasTuplas
 
 import java.util.*
 
+fun ej6litu(){
+    limpiarTerminal1()
+
+    val asignaturas = listOf(
+        "Matemáticas",
+        "Lengua Castellana y Literatura",
+        "Física",
+        "Química",
+        "Biología",
+        "Filosofía",
+        "Dibujo Técnico"
+    )
+
+    val suspensos = recorrerSuspensos(asignaturas)
+    mostrarSuspensos(suspensos, asignaturas.size)
+}
+
 fun limpiarTerminal1() {
     repeat(10) { println() }
 }
@@ -56,18 +73,5 @@ fun mostrarSuspensos(suspensos: List<String>, totalAsignaturas: Int) {
 }
 
 fun main() {
-    limpiarTerminal1()
-
-    val asignaturas = listOf(
-        "Matemáticas",
-        "Lengua Castellana y Literatura",
-        "Física",
-        "Química",
-        "Biología",
-        "Filosofía",
-        "Dibujo Técnico"
-    )
-
-    val suspensos = recorrerSuspensos(asignaturas)
-    mostrarSuspensos(suspensos, asignaturas.size)
+    ej6litu()
 }

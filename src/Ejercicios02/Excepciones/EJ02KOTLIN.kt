@@ -1,5 +1,11 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Excepciones
 
+fun ej2exc(){
+    val numero = pedirNumero()
+    println("La secuencia de números impares desde 1 hasta $numero es la siguiente:")
+    secuenciaImpares(numero)
+}
+
 fun pedirNumero(): Int {
     var numeroIncorrecto = true
     var numero = 0
@@ -38,7 +44,5 @@ fun secuenciaImpares(numero: Int) {
 }
 
 fun main() {
-    val numero = pedirNumero()
-    println("La secuencia de números impares desde 1 hasta $numero es la siguiente:")
-    secuenciaImpares(numero)
+    ej2exc()
 }

@@ -1,5 +1,17 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Conjuntos
 
+fun ej5conj(){
+    limpiarTerminal4()
+
+    val numeros = setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+    val pares = numerosPares(numeros)
+    val multiplosDeTres = multiplosTres(numeros)
+    val paresYMultiplosDeTres = pares intersect multiplosDeTres
+
+    mostrarResultados(pares, multiplosDeTres, paresYMultiplosDeTres)
+}
+
 fun limpiarTerminal4() {
     repeat(10) { println() }
 }
@@ -25,13 +37,5 @@ fun mostrarResultados(pares: Set<Int>, multiplos: Set<Int>, combinacion: Set<Int
 }
 
 fun main() {
-    limpiarTerminal4()
-
-    val numeros = setOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-
-    val pares = numerosPares(numeros)
-    val multiplosDeTres = multiplosTres(numeros)
-    val paresYMultiplosDeTres = pares intersect multiplosDeTres
-
-    mostrarResultados(pares, multiplosDeTres, paresYMultiplosDeTres)
+    ej5conj()
 }

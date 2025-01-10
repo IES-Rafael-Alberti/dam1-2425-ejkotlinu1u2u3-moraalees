@@ -1,5 +1,9 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Iterativas
 
+fun ej18ite(){
+    dividirSumarNumeroPar()
+}
+
 fun dividirSumarNumeroPar() {
     var contadorPares = 0
 
@@ -28,5 +32,5 @@ fun dividirSumarNumeroPar() {
 }
 
 fun main() {
-    dividirSumarNumeroPar()
+    ej18ite()
 }

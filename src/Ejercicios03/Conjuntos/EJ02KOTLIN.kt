@@ -1,5 +1,22 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Conjuntos
 
+fun ej2conj(){
+    limpiarTerminal1()
+
+    println("Introducir nombres de alumnos de primaria:")
+    val primaria = pedirAlumnos("Introduce los nombres de los alumnos de primaria (finaliza con 'x')").toSet()
+
+    limpiarTerminal1()
+
+    println("Introducir nombres de alumnos de secundaria:")
+    val secundaria = pedirAlumnos("Introduce los nombres de los alumnos de secundaria (finaliza con 'x')").toSet()
+
+    mostrarAlumnos(primaria, secundaria)
+    alumnosRepetidos(primaria, secundaria)
+    noRepetidos(primaria, secundaria)
+    nombresIncluidos(primaria, secundaria)
+}
+
 fun limpiarTerminal1() {
     repeat(10) { println() }
 }

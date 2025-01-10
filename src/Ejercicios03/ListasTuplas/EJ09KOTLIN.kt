@@ -2,6 +2,18 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.ListasTuplas
 
 import java.util.*
 
+fun ej9litu(){
+    limpiarTerminal3()
+
+    val scanner = Scanner(System.`in`)
+    print("Escriba una palabra: ")
+    val palabra = scanner.nextLine().lowercase().trim()
+
+    limpiarTerminal3()
+
+    contarVocal(palabra)
+}
+
 fun limpiarTerminal3() {
     repeat(10) { println() }
 }
@@ -42,15 +54,6 @@ fun contarVocal(palabra: String) {
     println("Por tanto, en -$palabra- hay $totalVocales vocal/es.")
 }
 
-// Función principal
 fun main() {
-    limpiarTerminal3()
-
-    val scanner = Scanner(System.`in`)
-    print("Escriba una palabra: ")
-    val palabra = scanner.nextLine().lowercase().trim()
-
-    limpiarTerminal3()
-
-    contarVocal(palabra)
+    ej9litu()
 }

@@ -1,5 +1,11 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Excepciones
 
+fun ej3exc(){
+    val numero = pedirNumero2()
+    println("La cuenta atrás desde $numero es la siguiente:")
+    cuentaAtras(numero)
+}
+
 fun pedirNumero2(): Int {
     var numeroIncorrecto = true
     var numero = 0
@@ -37,7 +43,5 @@ fun cuentaAtras(numero: Int) {
 }
 
 fun main() {
-    val numero = pedirNumero2()
-    println("La cuenta atrás desde $numero es la siguiente:")
-    cuentaAtras(numero)
+    ej3exc()
 }

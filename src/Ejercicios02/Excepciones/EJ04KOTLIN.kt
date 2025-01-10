@@ -1,5 +1,10 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Excepciones
 
+fun ej8exc(){
+    val entrada = pedirNumero3()
+    println("El número ingresado es: $entrada")
+}
+
 fun pedirNumero3(): Int {
     while (true) {
         try {
@@ -16,6 +21,5 @@ fun pedirNumero3(): Int {
 }
 
 fun main() {
-    val entrada = pedirNumero3()
-    println("El número ingresado es: $entrada")
+    ej8exc()
 }

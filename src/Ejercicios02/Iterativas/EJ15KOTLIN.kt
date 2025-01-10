@@ -1,5 +1,17 @@
 package com.dam1.ejerciciosbasicos.Ejercicios02.Iterativas
 
+fun ej15ite(){
+    print("Escriba un número entero positivo: ")
+    var numero = readLine()?.trim() ?: ""
+
+    while (!comprobarEntero(numero)) {
+        print("Si escribes un número entero positivo mejor, anda inténtalo: ")
+        numero = readLine()?.trim() ?: ""
+    }
+
+    sumatorioNumeros(numero)
+}
+
 fun comprobarEntero(numero: String): Boolean {
     return numero.toIntOrNull() != null
 }
@@ -23,13 +35,5 @@ fun sumatorioNumeros(numeroInicial: String) {
 }
 
 fun main() {
-    print("Escriba un número entero positivo: ")
-    var numero = readLine()?.trim() ?: ""
-
-    while (!comprobarEntero(numero)) {
-        print("Si escribes un número entero positivo mejor, anda inténtalo: ")
-        numero = readLine()?.trim() ?: ""
-    }
-
-    sumatorioNumeros(numero)
+    ej15ite()
 }

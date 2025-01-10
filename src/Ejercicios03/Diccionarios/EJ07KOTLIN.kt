@@ -2,6 +2,18 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.Diccionarios
 
 import java.util.*
 
+fun ej7dic(){
+    limpiarTerminal2()
+
+    val listaCompra = mutableMapOf<String, Double>()
+
+    val listaCompraActualizada = anadirProductosADiccionario(listaCompra)
+
+    mostrarLista(listaCompraActualizada)
+
+    mostrarPrecioTotal(listaCompraActualizada)
+}
+
 fun limpiarTerminal2() {
     repeat(10) { println() }
 }
@@ -73,13 +85,5 @@ fun mostrarPrecioTotal(diccionario: MutableMap<String, Double>) {
 }
 
 fun main() {
-    limpiarTerminal2()
-
-    val listaCompra = mutableMapOf<String, Double>()
-
-    val listaCompraActualizada = anadirProductosADiccionario(listaCompra)
-
-    mostrarLista(listaCompraActualizada)
-
-    mostrarPrecioTotal(listaCompraActualizada)
+    ej7dic()
 }

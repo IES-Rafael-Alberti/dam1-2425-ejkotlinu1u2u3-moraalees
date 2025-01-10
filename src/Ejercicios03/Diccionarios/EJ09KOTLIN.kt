@@ -2,6 +2,14 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.Diccionarios
 
 val VALORES = listOf("1.", "2.", "3.")
 
+fun ej9dic(){
+    limpiarTerminal4()
+
+    val facturas = mutableMapOf<String, Double>()
+
+    corresponderEntrada(facturas)
+}
+
 fun limpiarTerminal4() {
     repeat(10) { println() }
 }
@@ -145,9 +153,5 @@ fun pagarFactura(facturasDisponibles: MutableMap<String, Double>, contadorPago: 
 }
 
 fun main() {
-    limpiarTerminal4()
-
-    val facturas = mutableMapOf<String, Double>()
-
-    corresponderEntrada(facturas)
+    ej9dic()
 }

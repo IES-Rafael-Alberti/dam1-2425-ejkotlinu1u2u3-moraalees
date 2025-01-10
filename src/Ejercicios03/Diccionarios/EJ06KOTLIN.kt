@@ -1,5 +1,14 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Diccionarios
 
+fun ej6dic(){
+    limpiarTerminal1()
+
+    val datos = mutableMapOf<String, String>()
+
+    val datosRenovados = anadirDatosDiccionario(datos)
+
+    mostrarDatos(datosRenovados)
+}
 
 fun limpiarTerminal1() {
     repeat(10) { println() }
@@ -47,11 +56,5 @@ fun mostrarDatos(diccionario: Map<String, String>) {
 }
 
 fun main() {
-    limpiarTerminal1()
-
-    val datos = mutableMapOf<String, String>()
-
-    val datosRenovados = anadirDatosDiccionario(datos)
-
-    mostrarDatos(datosRenovados)
+    ej6dic()
 }

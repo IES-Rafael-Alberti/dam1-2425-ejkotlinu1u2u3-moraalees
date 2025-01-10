@@ -1,5 +1,18 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Conjuntos
 
+fun ej6conj(){
+    limpiarTerminal5()
+
+    val vocales = setOf('a', 'e', 'i', 'o', 'u')
+    val alfabeto = ('a'..'z').toSet()
+
+    val consonantes = (alfabeto - vocales)
+
+    val letrasComunes = vocales intersect consonantes
+
+    mostrarResultados(consonantes, letrasComunes)
+}
+
 fun limpiarTerminal5() {
     repeat(10) { println() }
 }
@@ -15,14 +28,5 @@ fun mostrarResultados(consonantes: Set<Char>, comunes: Set<Char>) {
 }
 
 fun main() {
-    limpiarTerminal5()
-
-    val vocales = setOf('a', 'e', 'i', 'o', 'u')
-    val alfabeto = ('a'..'z').toSet()
-
-    val consonantes = (alfabeto - vocales)
-
-    val letrasComunes = vocales intersect consonantes
-
-    mostrarResultados(consonantes, letrasComunes)
+    ej6conj()
 }

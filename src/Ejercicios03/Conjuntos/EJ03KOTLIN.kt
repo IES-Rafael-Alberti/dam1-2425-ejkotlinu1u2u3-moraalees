@@ -1,5 +1,19 @@
 package com.dam1.ejerciciosbasicos.Ejercicios03.Conjuntos
 
+fun ej3conj(){
+    limpiarTerminal2()
+
+    val conjunto = setOf(6, 1, 4)
+
+    val resultado = conjuntoPotencia(conjunto)
+    println("Conjunto potencia de $conjunto es el siguiente:")
+    pausa2()
+
+    for (subconjunto in resultado) {
+        println(subconjunto)
+    }
+}
+
 fun limpiarTerminal2() {
     repeat(10) { println() }
 }
@@ -26,15 +40,5 @@ fun conjuntoPotencia(conjuntoOriginal: Set<Int>): List<Set<Int>> {
 }
 
 fun main() {
-    limpiarTerminal2()
-
-    val conjunto = setOf(6, 1, 4)
-
-    val resultado = conjuntoPotencia(conjunto)
-    println("Conjunto potencia de $conjunto es el siguiente:")
-    pausa2()
-
-    for (subconjunto in resultado) {
-        println(subconjunto)
-    }
+    ej3conj()
 }

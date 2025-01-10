@@ -2,6 +2,19 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.ListasTuplas
 
 import java.util.*
 
+fun ej8litu(){
+    limpiarTerminal2()
+    val scanner = Scanner(System.`in`)
+
+    print("Escriba una palabra: ")
+    val palabra = scanner.nextLine().lowercase().trim()
+
+    println("Comprobando palabra: $palabra")
+    pausa2()
+
+    mostrarResultados(palabra)
+}
+
 fun limpiarTerminal2() {
     repeat(10) { println() }
 }
@@ -30,14 +43,5 @@ fun mostrarResultados(palabra: String) {
 }
 
 fun main() {
-    limpiarTerminal2()
-    val scanner = Scanner(System.`in`)
-
-    print("Escriba una palabra: ")
-    val palabra = scanner.nextLine().lowercase().trim()
-
-    println("Comprobando palabra: $palabra")
-    pausa2()
-
-    mostrarResultados(palabra)
+    ej8litu()
 }

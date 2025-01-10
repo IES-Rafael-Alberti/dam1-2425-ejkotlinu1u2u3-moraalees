@@ -8,6 +8,16 @@ val CADENA = """
     98376547F;Carmen Sánchez;carmen@mail.com;667677855;15.7
 """.trimIndent()
 
+fun ej11dic(){
+    limpiarTerminal5()
+
+    val directorio = generarDirectorio()
+    println("Generando directorio, por favor espere...")
+    pausa5()
+    println("\nAquí lo tienes:")
+    println(directorio)
+}
+
 fun limpiarTerminal5() {
     repeat(10) { println() }
 }
@@ -43,11 +53,5 @@ fun generarDirectorio(): Map<String, Map<String, Any>> {
 }
 
 fun main() {
-    limpiarTerminal5()
-
-    val directorio = generarDirectorio()
-    println("Generando directorio, por favor espere...")
-    pausa5()
-    println("\nAquí lo tienes:")
-    println(directorio)
+    ej11dic()
 }

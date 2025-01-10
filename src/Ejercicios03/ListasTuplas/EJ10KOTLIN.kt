@@ -3,6 +3,30 @@ package com.dam1.ejerciciosbasicos.Ejercicios03.ListasTuplas
 import kotlin.random.Random
 import java.util.*
 
+fun ej10litu(){
+    limpiarTerminal4()
+
+    val min = 1
+    val max = 100
+    val scanner = Scanner(System.`in`)
+
+    print("Escriba la cantidad de precios que quiere que haya en la lista (2-10): ")
+    var longitud = scanner.nextLine()
+
+    while (!comprobarLen(longitud)) {
+        print("El rango debe estar entre 2 y 10...: ")
+        longitud = scanner.nextLine()
+    }
+
+    val cantidad = longitud.toInt()
+
+    val precios = generarLista(min, max, cantidad)
+    val preciosOrdenados = ordenarLista(precios)
+
+    mostrarLista(preciosOrdenados)
+    menorYMayor(preciosOrdenados)
+}
+
 fun limpiarTerminal4() {
     repeat(10) { println() }
 }
@@ -45,25 +69,5 @@ fun menorYMayor(lista: List<Int>) {
 }
 
 fun main() {
-    limpiarTerminal4()
-
-    val min = 1
-    val max = 100
-    val scanner = Scanner(System.`in`)
-
-    print("Escriba la cantidad de precios que quiere que haya en la lista (2-10): ")
-    var longitud = scanner.nextLine()
-
-    while (!comprobarLen(longitud)) {
-        print("El rango debe estar entre 2 y 10...: ")
-        longitud = scanner.nextLine()
-    }
-
-    val cantidad = longitud.toInt()
-
-    val precios = generarLista(min, max, cantidad)
-    val preciosOrdenados = ordenarLista(precios)
-
-    mostrarLista(preciosOrdenados)
-    menorYMayor(preciosOrdenados)
+    ej10litu()
 }
