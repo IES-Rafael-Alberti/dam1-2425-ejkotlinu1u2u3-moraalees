@@ -1,6 +1,6 @@
 package com.dam1.ejerciciosbasicos.Ejercicios01
 
-fun main() {
+fun ejecutarEJ15KOTLIN(){
     println("Introduzca la cantidad de ahorros en su cuenta:")
     val interes = 0.04
     var ahorros: Double? = readLine()?.toDoubleOrNull()
@@ -19,4 +19,8 @@ fun main() {
     val año3 = año2 * (1 + interes)
     val año3_redondo = Math.round(año3 * 100) / 100.0
     println("EL capital tras un año será de $año3_redondo€")
+}
+
+fun main() {
+    ejecutarEJ15KOTLIN()
 }

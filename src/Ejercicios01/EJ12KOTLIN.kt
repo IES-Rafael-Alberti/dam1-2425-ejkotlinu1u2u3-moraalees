@@ -1,6 +1,6 @@
 package com.dam1.ejerciciosbasicos.Ejercicios01
 
-fun main() {
+fun ejecutarEJ12KOTLIN(){
     println("Introduzca su peso en kgs:")
     var peso: Double? = readLine()?.toDoubleOrNull()
     while (peso == null || peso < 0) {
@@ -16,4 +16,8 @@ fun main() {
     val indice = peso / (estatura * estatura)
     val indice_redondo = Math.round(indice * 100) / 100.0
     println("Tu índice de masa corporal es: $indice_redondo")
+}
+
+fun main() {
+    ejecutarEJ12KOTLIN()
 }

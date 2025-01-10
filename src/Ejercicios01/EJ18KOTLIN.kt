@@ -1,6 +1,6 @@
 package com.dam1.ejerciciosbasicos.Ejercicios01
 
-fun main() {
+fun ejecutarEJ18KOTLIN(){
     println("¿Cuál es tu nombre?")
     var nombre: String = readLine().toString()
     while (nombre.length == 0) {
@@ -21,4 +21,8 @@ fun main() {
             }
         }
     println("Su nombre entonces es $nombreTransformado")
+}
+
+fun main() {
+    ejecutarEJ18KOTLIN()
 }
